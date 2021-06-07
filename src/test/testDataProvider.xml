@@ -1,0 +1,22 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="TestData Provider Test" parallel="methods" thread-count="4">
+    <test name="Test Data Provider - Chrome">
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="com.sdetpro.test.dataprovider.TestDataProvider"/>
+        </classes>
+    </test>
+    <test name="Test Data Provider - FF">
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="com.sdetpro.test.dataprovider.TestDataProvider"/>
+        </classes>
+    </test>
+    <test name="Test Data Provider - Safari">
+        <parameter name="browser" value="safari"></parameter>
+        <classes>
+            <class name="com.sdetpro.test.dataprovider.TestDataProvider"/>
+        </classes>
+    </test>
+</suite>

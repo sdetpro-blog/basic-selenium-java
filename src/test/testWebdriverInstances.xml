@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="WebDriver Instances Testing" parallel="methods" thread-count="4">
+    <test name="Driver FActory Test">
+        <classes>
+            <class name="com.sdetpro.test.parallel.TestDriverInstances"/>
+        </classes>
+    </test>
+</suite>

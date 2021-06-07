@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Regression Test">
+    <groups>
+        <run>
+            <include name="regression"></include>
+        </run>
+    </groups>
+    <listeners>
+        <listener class-name="com.sdetpro.listener.ListenerEx"/>
+    </listeners>
+    <test name="Authentication Function">
+        <classes>
+            <class name="com.sdetpro.test.authen.NormalLogin"/>
+            <class name="com.sdetpro.test.authen.SSOLogin"/>
+        </classes>
+    </test>
+    <test name="Task Function">
+        <classes>
+            <class name="com.sdetpro.test.task.TaskCRUD"/>
+            <class name="com.sdetpro.test.task.TaskManagement"/>
+        </classes>
+    </test>
+</suite>
